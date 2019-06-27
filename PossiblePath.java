@@ -10,10 +10,10 @@ public class PossiblePath {
     public static ArrayList<String> getMoves(int[][] maze, String pos){
         int currentRow = Integer.parseInt(pos.split(" ")[0]);
         int currentCol = Integer.parseInt(pos.split(" ")[1]);
-        int[] moveCol = {0, 1, -1}; //Right to Left or Vice Versa
-        int[] moveRow = {1, 0, 0}; //Up
+        int[] moveCol = {0, 1, -1, 0}; //Right to Left or Vice Versa
+        int[] moveRow = {1, 0, 0, -1}; //Up
         ArrayList<String> moves = new ArrayList<>();
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 4; i++){
             if ((currentRow + moveRow[i]) < maze.length && (currentRow + moveRow[i]) >= 0){
                 if ((currentCol + moveCol[i]) < maze.length && (currentCol + moveCol[i]) >= 0){
                     if (maze[(currentRow + moveRow[i])][(currentCol + moveCol[i])] != 1) {
