@@ -10,3 +10,4 @@ The program is set to grab and reference the Maze.jpg from its location on my co
 >>>>>>> f86541e9d79d48ca004cd93f37ea972543fbbf8e
 # JavaMail
 # JavaMail
+# JavaMail
